@@ -1,1 +1,1 @@
-What i got so far.
+Simple Java blackjack game with betting.
