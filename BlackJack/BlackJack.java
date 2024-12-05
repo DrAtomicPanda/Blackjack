@@ -17,7 +17,7 @@ public class BlackJack {
             newbet = 0;
             play();
         }
-        File Money = new File("money.txt");
+        File Money = new File("BlackJack/money.txt");
         Scanner file = new Scanner(Money);
         PrintStream dollars = new PrintStream(Money);
         dollars.print(cash);
@@ -26,7 +26,7 @@ public class BlackJack {
     }
 
     public static void start() throws FileNotFoundException {
-        File Money = new File("money.txt");
+        File Money = new File("BlackJack/money.txt");
         Scanner file = new Scanner(Money);
         Scanner console = new Scanner(System.in);
         System.out.println(
@@ -258,7 +258,7 @@ public class BlackJack {
                         break;
                     case "save":
                         System.out.println("Cash remaining: " + cash);
-                        File Money = new File("money.txt");
+                        File Money = new File("BlackJack/money.txt");
                         PrintStream dollars = new PrintStream(Money);
                         dollars.print(cash);
                         console.close();
